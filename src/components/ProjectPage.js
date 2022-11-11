@@ -20,9 +20,11 @@ export default function ProjectPage() {
         <div className="project-title">
             <h1>{title}</h1>
             <p className="project-description">{description}</p>
-            <img src={featuredImage} alt={featuredImageAlt}/>
+            <div className="project-image-container">
+                <img src={featuredImage} alt={featuredImageAlt}/>
+            </div>
             <div className="project-links">
-                {links.map(link => <a key={link.text} href={link.link} className="btn btn-success">{link.text}</a>)}
+                {links.map(link => <a key={link.text} href={link.link}>{link.text}</a>)}
             </div>
             <section className="site-overview">
                 <div>

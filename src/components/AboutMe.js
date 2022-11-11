@@ -29,14 +29,14 @@ export default function AboutMe() {
                         <button onClick={() => onSelect(5)} className={level >= 5 ? 'active' : ''}></button>
                         <span>longest</span>
                     </div>
-                    <Fade when={level >= 1}>
+                    <Fade collapse when={level >= 1}>
                         <p>
                             Thank you for scrolling this far.
                             From being a teacher in a school to coding on a web page, I love combining the worlds of
                             logic and creative design to make eye-catching, accessible, and user-friendly websites and applications.
                         </p>
                     </Fade>
-                    <Fade when={level >= 2}>
+                    <Fade collapse when={level >= 2}>
                         <p>
                             I am recently graduated from BCIT Front end Web development. 
                             I deepened my HTML/ CSS knowledge and learned so much, especially more advanced web 
@@ -48,19 +48,19 @@ export default function AboutMe() {
                             Sociology, Visual Arts, and Material Development.
                         </p>
                     </Fade>
-                    <Fade when={level >= 3}>
+                    <Fade collapse when={level >= 3}>
                         <p>
                             I believe in lifelong learning and continuous improvement. This is one of the reasons as a experienced teacher I
                             followed my passion and have a step on Web Deseign-Developmet area.
                             I worked as a kindergarten teacher for 5 years in public elementary schools with over 150 students and 20 teachers.
                         </p>
                     </Fade>
-                    <Fade when={level >= 4}>
+                    <Fade collapse when={level >= 4}>
                         <p>
                             I Speak Turkish and English as a native. I also speak and understand German and planning to learn French in the near future.
                         </p>
                     </Fade>
-                    <Fade when={level >= 5}>
+                    <Fade collapse when={level >= 5}>
                         <p>
                             Outside Of the Work;<br/>
                             I am a mother of 2 angels, a 4-year-old boy, and a 6-year-old girl.

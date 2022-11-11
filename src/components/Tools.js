@@ -3,41 +3,41 @@ export default function Tools() {
         <section className="tools">
             <h2>Skills</h2>
             <div className="tools-wrap">
-                    <div className="tools-list">
-                        <h4>Design</h4>
-                        <ul>
-                            <li>Photoshop</li>
-                            <li>Illustrator</li>
-                            <li>InDesign</li>
-                            <li>XD</li>
-                            <li>Figma</li>
-                            <li>InVision</li>
-                            <li>User Research</li>
-                        </ul>
+                <div className="tools-list">
+                    <h5>Design</h5>
+                    <div className="tools-section">
+                        <div>Photoshop</div>
+                        <div>Illustrator</div>
+                        <div>InDesign</div>
+                        <div>XD</div>
+                        <div>Figma</div>
+                        <div>InVision</div>
+                        <div>User Research</div>
                     </div>
-                    <div className="tools-list">
-                    <h4>Development</h4>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>SASS</li>
-                            <li>CSS</li>  
-                            <li>JavaScript</li>   
-                            <li>Php</li>  
-                            <li>React.js</li>      
-                            <li>jQueary</li>           
-                            <li>WordPress</li>
-                        </ul>
                 </div>
                 <div className="tools-list">
-                <h4>Additional Skills</h4>
-                        <ul>
-                            <li>GitHub</li>
-                            <li>SEO</li>
-                            <li>Project Management</li>
-                            <li>Google Analytics</li>
-                            <li>WooCommerce</li>
-                            <li>Shopify</li>
-                        </ul>
+                    <h5>Development</h5>
+                    <div className="tools-section">
+                        <div>HTML 5</div>
+                        <div>SASS</div>
+                        <div>CSS</div>  
+                        <div>JavaScript</div>   
+                        <div>Php</div>  
+                        <div>React.js</div>      
+                        <div>jQueary</div>           
+                        <div>WordPress</div>
+                    </div>
+                </div>
+                <div className="tools-list">
+                    <h5>Additional Skills</h5>
+                    <div className="tools-section">
+                        <div>GitHub</div>
+                        <div>SEO</div>
+                        <div>Project Management</div>
+                        <div>Google Analytics</div>
+                        <div>WooCommerce</div>
+                        <div>Shopify</div>
+                    </div>
                 </div>
             </div>
         </section>

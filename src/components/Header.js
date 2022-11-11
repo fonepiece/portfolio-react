@@ -15,8 +15,7 @@ export default function Header() {
                     <path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"></path>
                 </svg>
             </button>
-
-                <ul className="nav-menu" id="header-menu">
+                <ul className="nav-menu circleBehind" id="header-menu">
                     <li><HashLink className="btn-border" to="/#my-projects">Projects</HashLink></li>
                     <li><HashLink className="btn-border" to="/#about">About</HashLink></li>
                     <li><HashLink className="btn-border" to="/#footer">Contact</HashLink></li>

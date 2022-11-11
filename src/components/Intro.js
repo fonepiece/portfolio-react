@@ -1,20 +1,29 @@
+import { Fade, Slide } from "react-awesome-reveal"
+
 export default function Intro() {
     return (
         <section id="intro-section">
+            
             <div className="banner">
                 <div className="intro">
-                    <h1>Reyhan Taze</h1>
+                    <Slide direction="down" triggerOnce>
+                        <h1>Reyhan Taze</h1>
+                    </Slide>
                     <p className="summary">
-                        <span>UI/UX Designer</span> -
-                        <span> End Web Developer</span><br/>
-                        with a passion for creating engaging, interactive,<br/>
-                        accessible websites and mobile applications.
+                        <Fade direction="left" triggerOnce cascade>
+                            <div>UI/UX Designer End Web Developer</div>
+                            <div>with a passion for creating engaging, interactive,</div>
+                            <div>accessible websites and mobile applications.</div>
+                        </Fade>
                     </p>
                 </div>
-                <div className="avatar">
-                    <img src="/media/avatar.png"/>
-                </div>
+                <Fade direction="right" triggerOnce>
+                    <div className="avatar">
+                        <img src="/media/avatar.png"/>
+                    </div>
+                </Fade>
             </div>
+            
             <div className="show-more">
             <a className="intro-more-link" href="#my-projects">
                 <svg viewBox="0 0 68 33" className="chevron-down">
