@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Header() {
     return (
@@ -16,9 +17,9 @@ export default function Header() {
             </button>
 
                 <ul className="nav-menu" id="header-menu">
-                    <li><a className="btn-border" href="#my-projects">Projects</a></li>
-                    <li><a className="btn-border" href="#about">About</a></li>
-                    <li><a className="btn-border" href="#footer">Contact</a></li>
+                    <li><HashLink className="btn-border" to="/#my-projects">Projects</HashLink></li>
+                    <li><HashLink className="btn-border" to="/#about">About</HashLink></li>
+                    <li><HashLink className="btn-border" to="/#footer">Contact</HashLink></li>
                 </ul>
             </nav>
         </header>

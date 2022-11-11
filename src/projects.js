@@ -1,3 +1,5 @@
+import PreviewImage from "./components/PreviewImage";
+
 export const projects = [
     {
         id: 'beauty',
@@ -6,7 +8,22 @@ export const projects = [
         featuredImage: '/media/project/wordpres.png',
         featuredImageAlt: 'wordpress-medical clinic',
         projectDetails: {
-
+            title: 'Beauty Aesthetics Medical',
+            description: 'Wordpress Custom Website Design and development for a local medical clinic.',
+            featuredImage: '/media/project/wordpress-single.png',
+            featuredImageAlt: 'Beauty Aesthetics Medical',
+            links: [
+                {text: 'Live', link: 'https://beautyaesthetics.bcitwebdeveloper.ca/'},
+                {text: 'Github', link: 'https://github.com/htpwebdesign/beauty-aesthetics'},
+            ],
+            overview: {
+                tools: ['WordPress', 'SASS', 'JavaScript', 'PHP', 'GitHub', 'Photoshop Illustrator', 'Adobe XD', 'Asana'],
+                description: "The new website for the Beauty Aesthetics clinic should have a warm and welcoming appearance. It should be unique among the websites of other clinics while still acting professionally. First-time visitors should be impressed by the website so they will remember both it and the company it represents. The website will list the company's services, location, and make it simple for customers to make booking with the aim of reflecting the particular personality of the elite medical company.",
+                responsiveness: 'Desktop and Mobile',
+                roles: ['Content and Development Planner', 'UI Designer', 'Front-End Developer'],
+                duration: '3 weeks',
+            },
+            tabs: getBeauityTabs()
         }
     },
     {
@@ -35,8 +52,9 @@ export const projects = [
             overview: {
                 tools: ['HTML', 'CSS', 'Photoshop', 'Adobe XD', 'React', 'jQuery', 'Bootstrap'],
                 description: 'An end-to-end project from concept ideation to interaction and prototyping. First on Photoshop high fidelity mockup created on Photoshop and then exported to Adobe XD adding animations with React that uses real time data from The Movie Database TMDb APIAs, as team of 2 movie data base website is built.',
-                responsiveness: 'Desktop and mobile',
-                roles: ['UI/UX Designer', 'Front End Web Developer']
+                responsiveness: 'Desktop and Mobile',
+                roles: ['UI/UX Designer', 'Front End Web Developer'],
+                duration: '2 weeks',
             },
             tabs: getMovieTabs()
         }
@@ -141,5 +159,81 @@ function getMovieTabs() {
 
 
 /*
- *  XXXX
+ *  BEAUITY
  */
+
+function getBeauityTabs() {
+    const tab1 = (<>
+        <h5>Project Management</h5>
+        <p>
+            Our team used Asana as a project management tool for this particular project since it is free for a small team like ours and fairly easy to learn. Using it will allow us to easily see what kind of tasks we have on hand, assign specific tasks to members of our team, easily assess the deadlines, and assign the priority to tasks. 
+            Every member will assume every role through the duration of the project as needed. We will equally split the workload on design, development, content of the website, and the documentation required for the project. 
+        </p>
+
+        <h5>UX Research</h5>
+        <p>
+            We want to understand the business owner, the industry, and—most importantly—users before we start designing. At the outset of the project, we invested the time necessary to fully comprehend the problems that needed to be fixed and how we might do so more effectively than the competition. 
+
+            Competitive analysis
+            <ul>
+                <li>https://mdmedicalclinic.com/north-vancouver/</li>
+                <li>https://mdmedicalclinic.com/north-vancouver/</li>
+                <li>https://davihillhair.com/</li>
+            </ul>
+
+        </p>
+        <h5>Target Audience</h5>
+        <p>
+            The website will target both men and women who wish to revitalise their skin and are between the ages of 18 and 50. Our intended audience members are looking for reasonably priced cosmetic procedures performed by qualified medical professionals.
+        </p>
+        <h5>Requirements</h5>
+        <ul>
+            <li>While maintaining professionalism, the design ought to be warm and welcoming. It should wow the new visitors and leave a lasting impression of both the website and the company endeavour it supports.</li>
+            <li>A welcome greeting, a succinct business statement, services, contact details, and a map on the homepage.</li>
+            <li>Services page will  list each service and provide a link to its own page. Skin Resurfacing, Micro Needling, HydraFacial, Laser Hair Removal, and Skin Resurfacing are the services that clinic is currently providing.</li>
+            <li>Each staff member will have their name, title, a brief bio, and a picture displayed on a staff page. The clinic currently employs an office manager, three cosmetic nurses, and two dermatologists.</li>
+            <li>About page that will outline the clinic’s philosophy to health and its history. </li>
+            <li>Resource page that will utilize blog functionality of the website and provide patients with useful resources. </li>
+            <li>Contact page with Address, Map, Phone Number, Fax Number, Email Address, Hours. Basic contact information should also be on every page of the website. </li>
+            <li>Include an online booking functionality for customers to book appointments with a specific doctor. </li>
+        </ul>
+        <h5>Content Plan / Information Architecture</h5>
+        <p>see the pdf</p>
+        <h5>SiteMap</h5>
+        <img src="/media/project/details/wordpress-sitemap.png"/>
+
+        <h5>Wireframing</h5>
+        <p>Created a mobile and desktop portfolio website wireframe</p>
+        <img src="/media/project/details/wordpress-mockup.png"/>
+
+        <h5>UI design</h5>
+        <p>Style guide</p>
+        <PreviewImage src='/media/project/details/wordpress-styleguide.png'></PreviewImage>
+
+        <h5>Prototyping</h5>
+        <p>I created these mockups for my portfolio in Adobe XD:</p>
+ 
+        <h5>Accessibility</h5>
+        <ul>
+            <li>Structured and organized with headers so users to easily navigate your webpages</li>
+            <li>Assigned alt tags for images for users with limited or impaired vision</li>
+            <li>Used descriptive titles for links</li>
+            <li>Ensuring the colour contrasts and text sizes meet AA accessibility standards.</li>
+            <li>t for anyone with low vision or color deficiencies</li>
+        </ul>
+    </>);
+
+    const tab2 = (<>
+        
+    </>)
+
+    const tab3 = (<>
+        <p>
+            It was a quick project that took three weeks to complete from content generation to wireframing, UI design, development, and styling (alongside other projects that were due).
+            As a Team, we contribute to the project planning and evenly divided the design tasks because we were in agreement on the majority of decisions. We were able to keep track of the individual tasks and maintain a consistent pace with the project flow thanks to the utilisation of a Asana board.
+            This ensured that no team member lagged behind, allowing us to fulfil deadlines and deliver a final website that pleased both our client and team.
+            My skills to work with a team and design and creating a website from scratch were both enhanced by this project. The key to this entire process was communication, along with maintaining organisation with our ideas and material due to the numerous, pressing deadlines and frequent status meetings.
+        </p>
+    </>)
+    return [tab1, tab2, tab3];
+}

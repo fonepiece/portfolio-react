@@ -21,7 +21,7 @@ export default function ProjectPage() {
             <h1>{title}</h1>
             <p>{description}</p>
             <img src={featuredImage} alt={featuredImageAlt}/>
-            {links.map(link => <button><a href={link.link}>{link.text}</a></button>)}
+            {links.map(link => <button key={link.text}><a href={link.link}>{link.text}</a></button>)}
 
             <section className="site-overview">
                 <div>
@@ -34,6 +34,8 @@ export default function ProjectPage() {
                         <dd className="col-sm-9">{overview.responsiveness}</dd>
                         <dt className="col-sm-3">Roles</dt>
                         <dd className="col-sm-9">{overview.roles.join(' - ')}</dd>
+                        <dt className="col-sm-3">Duration</dt>
+                        <dd className="col-sm-9">{overview.duration}</dd>
                     </dl>
                 </div>
             </section>

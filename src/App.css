@@ -494,3 +494,18 @@ html {
 .tab-pane {
   margin-top: 30px;
 }
+
+
+.project-title .tab-content ul {
+    list-style-type: circle;
+    font-size: 15px;
+    padding-left: 40px;
+}
+
+.preview-image {
+    max-width: 400px;
+}
+
+.preview-image-link {
+    cursor: zoom-in;
+}
