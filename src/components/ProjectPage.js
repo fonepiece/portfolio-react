@@ -41,7 +41,7 @@ export default function ProjectPage() {
             </section>
 
             <section>
-            <Tabs
+            {tabs && tabs.length >= 3 && <Tabs
                 defaultActiveKey="nav-design"
                 id="nav-tab"
             >
@@ -54,7 +54,7 @@ export default function ProjectPage() {
                 <Tab eventKey="nav-learnings" title="Challenges&Learnings">
                     {tabs[2]}
                 </Tab>
-            </Tabs>
+            </Tabs>}
             </section>
         </div>
     )

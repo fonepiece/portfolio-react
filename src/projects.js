@@ -64,15 +64,47 @@ export const projects = [
         title: 'Visit Turkey',
         tools: ['HTML5', 'CSS', 'JavaScript'],
         featuredImage: '/media/project/turky-home.png',
-        featuredImageAlt: 'html css javascrip project'
+        featuredImageAlt: 'html css javascrip project',
+        projectDetails: {
+            title: 'County Web Page',
+            description: 'This is an example of creating Animated HTML5 Website for desktop and a separate lightweight mobile website.',
+            featuredImage: '/media/project/turkey-single.png',
+            featuredImageAlt: 'County Web Page',
+            links: [
+                {text: 'Live', link: 'https://reyhantaze.com/country'},
+            ],
+            overview: {
+                tools: ['HTML', 'CSS', 'Javascript'],
+                // description: 'On the first screen, the player enters the name. When the player clicks the start button, the second screen will be displayed. The second screen shows the instructions. By clicking the buttons(easy-hard), the player selects the level. On the 3rd screen, we have a total of 8 cards for the easy level and 16 cards for the hard level on the game board. All cards will be faced down initially. There are two identical images for each pair. There will be also a display area for name, score, and timer.',
+                responsiveness: 'Desktop and Mobile',
+                roles: ['UI/UX Designer', 'Front End Web Developer'],
+                duration: '1 week',
+            },
+        }
 
     },
     {
         id: 'matching-game',
         title: 'Matching Game',
-        tools: ['HTML5', 'CSS', 'JavaScript'],
+        tools: ['HTML5', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap'],
         featuredImage: '/media/project/cardgame-home.png',
-        featuredImageAlt: 'Matching card Game'
+        featuredImageAlt: 'Matching card Game',
+        projectDetails: {
+            title: 'Card Game',
+            description: 'This is an example of using jQuery and vanilla Javascript to manipulate the DOM and CSS properties.',
+            featuredImage: '/media/project/cardgame-single.png',
+            featuredImageAlt: 'Card Game',
+            links: [
+                {text: 'Live', link: 'https://reyhantaze.com/card-game'},
+            ],
+            overview: {
+                tools: ['HTML', 'CSS', 'Javascript', 'jQuery', 'Bootstrap'],
+                description: 'On the first screen, the player enters the name. When the player clicks the start button, the second screen will be displayed. The second screen shows the instructions. By clicking the buttons(easy-hard), the player selects the level. On the 3rd screen, we have a total of 8 cards for the easy level and 16 cards for the hard level on the game board. All cards will be faced down initially. There are two identical images for each pair. There will be also a display area for name, score, and timer.',
+                responsiveness: 'Desktop and Mobile',
+                roles: ['UI/UX Designer', 'Front End Web Developer'],
+                duration: '1 week',
+            },
+        }
     },
     {
         id: 'cupcake',
@@ -204,11 +236,18 @@ function getBeauityTabs() {
 
         <h5>Wireframing</h5>
         <p>Created a mobile and desktop portfolio website wireframe</p>
-        <img src="/media/project/details/wordpress-mockup.png"/>
+        <PreviewImage
+            message='Click to open it in Adobe XD'
+            src='/media/project/details/wordpress-mockup.png'
+            link='https://xd.adobe.com/view/57775995-62e5-4b85-972d-d5c08fe86117-0224/grid'
+        />
 
         <h5>UI design</h5>
         <p>Style guide</p>
-        <PreviewImage src='/media/project/details/wordpress-styleguide.png'></PreviewImage>
+        <PreviewImage
+            message='Click to zoom in'
+            src='/media/project/details/wordpress-styleguide.png'
+        />
 
         <h5>Prototyping</h5>
         <p>I created these mockups for my portfolio in Adobe XD:</p>

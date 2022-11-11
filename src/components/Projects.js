@@ -18,7 +18,7 @@ export default function Projects() {
                 </div>
                 <div className="project-row">
                     <ProjectItem project={projects[4]}/>
-                    <ProjectItem project={projects[5]}/>
+                    <ProjectItem project={projects[5]} link="/media/project/details/cupcake-ux-brief.pdf"/>
                 </div>
             </div>
         </section>
