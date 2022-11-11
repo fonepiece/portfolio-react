@@ -19,10 +19,11 @@ export default function ProjectPage() {
     return (
         <div className="project-title">
             <h1>{title}</h1>
-            <p>{description}</p>
+            <p className="project-description">{description}</p>
             <img src={featuredImage} alt={featuredImageAlt}/>
-            {links.map(link => <button key={link.text}><a href={link.link}>{link.text}</a></button>)}
-
+            <div className="project-links">
+                {links.map(link => <a key={link.text} href={link.link} className="btn btn-success">{link.text}</a>)}
+            </div>
             <section className="site-overview">
                 <div>
                     <h4>Overview</h4>
@@ -41,19 +42,19 @@ export default function ProjectPage() {
             </section>
 
             <section>
-            {tabs && tabs.length >= 3 && <Tabs
-                defaultActiveKey="nav-design"
+            {tabs && <Tabs
+                defaultActiveKey={tabs.design ? "nav-design" : "nav-dev"}
                 id="nav-tab"
             >
-                <Tab eventKey="nav-design" title="Design Process">
-                    {tabs[0]}
-                </Tab>
-                <Tab eventKey="nav-dev" title="Development Process">
-                    {tabs[1]}
-                </Tab>
-                <Tab eventKey="nav-learnings" title="Challenges&Learnings">
-                    {tabs[2]}
-                </Tab>
+                {tabs.design && <Tab eventKey="nav-design" title="Design Process">
+                    {tabs.design}
+                </Tab>}
+                {tabs.dev && <Tab eventKey="nav-dev" title="Development Process">
+                    {tabs.dev}
+                </Tab>}
+                {tabs.learnings && <Tab eventKey="nav-learnings" title="Challenges&Learnings">
+                    {tabs.learnings}
+                </Tab>}
             </Tabs>}
             </section>
         </div>

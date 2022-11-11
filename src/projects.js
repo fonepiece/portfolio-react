@@ -31,8 +31,25 @@ export const projects = [
         title: 'My Portfolio',
         tools: ['Adobe XD', 'Adobe Photoshop', 'HTML5', 'CSS3/Sass', 'React'],
         featuredImage: '/media/project/portfolio-home.png',
-        featuredImageAlt: 'React-my portfolio'
-
+        featuredImageAlt: 'React-my portfolio',
+        projectDetails: {
+            title: 'My Portfolio',
+            description: 'Built with React and lots of love! This website is a showcase of my recent projects as a Front End web developer and UI/UX Designer.',
+            featuredImage: '/media/project/portfoloi-single.png',
+            featuredImageAlt: 'My Portfolio',
+            links: [
+                {text: 'Live', link: 'https://reyhantaze.com'},
+                {text: 'Github', link: 'https://github.com/fonepiece/personal-website'},
+            ],
+            overview: {
+                tools: ['HTML', 'CSS', 'React', 'jQuery', 'Bootstrap', 'Photoshop', 'Illustrator', 'Adobe XD'],
+                description: "This project was intended to be a display of all the things I've worked on in recent years. I made an effort to keep the user interface (UI) as straightforward as I could, combining it with the web technologies I think work best for a non-reactive website which is a place that shows who I am - my work attitude, style and personality and my design / development skills.",
+                responsiveness: 'Desktop and Mobile',
+                roles: ['Content and Development Planner', 'UI Designer', 'Front-End Developer'],
+                duration: '2 weeks',
+            },
+            tabs: getPortfolioTabs()
+        }
     },
     {
         id: 'movie',
@@ -80,6 +97,7 @@ export const projects = [
                 roles: ['UI/UX Designer', 'Front End Web Developer'],
                 duration: '1 week',
             },
+            tabs: getCountryTabs()
         }
 
     },
@@ -186,7 +204,7 @@ function getMovieTabs() {
             it so that it may be shown in ways that enhance user experience.
         </p>
     </>)
-    return [tab1, tab2, tab3];
+    return {design: tab1, dev: tab2, learnings: tab3};
 }
 
 
@@ -274,5 +292,98 @@ function getBeauityTabs() {
             My skills to work with a team and design and creating a website from scratch were both enhanced by this project. The key to this entire process was communication, along with maintaining organisation with our ideas and material due to the numerous, pressing deadlines and frequent status meetings.
         </p>
     </>)
-    return [tab1, tab2, tab3];
+    return {design: tab1, dev: tab2, learnings: tab3};
+}
+
+/**
+ * COUNTRY
+ */
+
+ function getCountryTabs() {
+
+    const tab2 = (<>
+        <h5>Project Description</h5>
+        <p>Created  a multi-page website about Turkey.</p>
+        
+        <h5>Content</h5>
+        <p>Used text, video and image content that falls under creative commons licenses.</p>
+ 
+        <h5>HTML</h5>
+        <p>The website contains all the following (as a minimum)</p>
+        <ul>
+            <li>three HTML webpages about your location</li>
+            <li>HTML table</li>
+            <li>HTML audio or video element</li>
+            <li>blockquote element</li>
+            <li>custom font</li>
+            <li>site navigation with links to every page and reused on all pages</li>
+            <li>the meta tag for an SEO description</li>
+            <li>HTML webpage giving credit to the creators of content with links to their websites.</li>
+        </ul>
+
+        <h5>CSS</h5>
+        <p>
+            Created custom styles using an external stylesheet that applies to all of the webpages. 
+            The website is responsive and  the CSS has been written mobile-first
+            CSS Grid and CSS Flexbox used at least once for styling.
+        </p>
+    </>)
+
+    const tab3 = (<>
+        <p>
+            The figcaption element can only be the first or last child of a figure element, currently you have it as a grandchild in index.html.
+            In cuisine.html, I have written in all capital letters for the cuisine names. I learned to avoid doing this in the HTML and instead do this in the CSS otherwise some screen readers will think it is an acronym and read each letter instead of the word.
+        </p>
+    </>)
+    return {dev: tab2, learnings: tab3};
+}
+
+
+/*
+ *  PORTFOLIO
+ */
+
+function getPortfolioTabs() {
+    const tab1 = (<>
+        <h5>UX Research</h5>
+        <ul>
+            <li>Are there a thousand other portfolios exactly like this one?</li>
+            <li>Does the work in my portfolio accurately reflect who I am as a person? If not, is there a subtle way to include that into the layout of the portfolio?</li>
+            <li>Are any portfolio design decisions interfering with the presentation of the work?</li>
+            <li>Do people remember my portfolio?</li>
+        </ul>
+        <p>
+            After answering these questions, I designed the UI with the intention of keeping it simple and easy to use. Thoughtful navigation and make calls-to-actions easy to spot and engage with was another intention. With the attention to detail put into every design, I ensure that website is not only looks beautiful, but it converts.
+            I want my portfolio simple elegant and reflects my colourful personality who loves colours so I don't be afraid to use it.
+        </p>
+        <h5>Wireframing</h5>
+        <p>Created a mobile and desktop portfolio website wireframe</p>
+        <h5>UI Design</h5>
+        <p>Styleguide</p>
+        <h5>Prototyping</h5>
+        <p>I created these mockups for my portfolio in Adobe XD</p>
+
+        <h5>Accecibility</h5>
+        <ul>
+            <li>Structured and organized with headers so users to easily navigate your webpages</li>
+            <li>Assigned alt tags for images for users with limited or impaired vision</li>
+            <li>Used descriptive titles for links</li>
+            <li>Used colors that provide maximum contrast for anyone with low vision or color deficiencies</li>
+            <li>Used sound effects to use more senses to navigate website.</li>
+            <li>Allows user to switch for night time and  day time.</li>
+        </ul>
+    </>);
+
+    const tab2 = (<>
+        <p>Sound On/Off preferences are stored in Local Storage. This enables a better user experience for repeat users who have previously disabled sound on the website. </p>
+        <ul>
+            
+        </ul>
+    </>)
+
+    const tab3 = (<>
+        <p>
+        </p>
+    </>)
+    return {design: tab1, dev: tab2, learnings: tab3};
 }

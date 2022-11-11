@@ -380,6 +380,7 @@ color:#6D8FB5;
     text-align: center;
     flex-direction: column;
     padding-bottom: 0;
+    padding-top: 30px;
 }
 #footer .social-icons {
     display: flex;
@@ -431,12 +432,19 @@ color:#6D8FB5;
     cursor: pointer;
 }
 
+.about-button-container button.active {
+    background-color: #962506;
+}
+
+.about-button-container span {
+    color: #962506;
+}
 
 .chevron-down {
   fill: #F28585;
   margin: auto;
-  width: 2em;
-  height: 2em;
+  width: 1.4em;
+  height: 1.4em;
   animation: hover-me .5s infinite ease-in-out alternate; 
 }
 @keyframes hover-me {
@@ -508,4 +516,38 @@ html {
 
 .preview-image-link {
     cursor: zoom-in;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    margin-bottom: 40px;
+}
+.project-links a {
+    margin-right: 10px;
+    margin-left: 10px;
+    min-width: 80px;
+}
+.project-title {
+    margin-bottom: 30px;
+}
+.project-title h4 {
+    text-align: center;
+    color: #BF3309;
+    padding-bottom: 10px;
+}
+.project-title h5 {
+    color: #035AA6;
+}
+
+section .nav.nav-tabs {
+    justify-content: center;
+}
+
+.project-title h1 {
+    text-align: center;
+}
+.project-description {
+    text-align: center;
 }
