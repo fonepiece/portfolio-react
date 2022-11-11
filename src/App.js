@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import DocumentMeta from 'react-document-meta';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Main from './components/Main';
+
+const meta = {
+  title: 'Reyhan Taze',
+  description: 'Front End Web developer and designer, Reyhan Taze portfolio website',
+  meta: {
+    charset: 'utf-8',
+    name: {
+      keywords: 'ux,designer,ui,html,css'
+    }
+  }
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DocumentMeta {...meta}>
+      <Main />
+    </DocumentMeta>
   );
 }
 
