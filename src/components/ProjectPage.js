@@ -27,13 +27,13 @@ export default function ProjectPage() {
                 <div>
                     <h4>Overview</h4>
                     <p>{overview.description}</p>
-                    <dl class="row">
-                        <dt class="col-sm-3">Toolkit</dt>
-                        <dd class="col-sm-9">{overview.tools.join(', ')}</dd>
-                        <dt class="col-sm-3">Responsiveness</dt>
-                        <dd class="col-sm-9">{overview.responsiveness}</dd>
-                        <dt class="col-sm-3">Roles</dt>
-                        <dd class="col-sm-9">{overview.roles.join(' - ')}</dd>
+                    <dl className="row">
+                        <dt className="col-sm-3">Toolkit</dt>
+                        <dd className="col-sm-9">{overview.tools.join(', ')}</dd>
+                        <dt className="col-sm-3">Responsiveness</dt>
+                        <dd className="col-sm-9">{overview.responsiveness}</dd>
+                        <dt className="col-sm-3">Roles</dt>
+                        <dd className="col-sm-9">{overview.roles.join(' - ')}</dd>
                     </dl>
                 </div>
             </section>
