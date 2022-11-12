@@ -1,6 +1,7 @@
 import DocumentMeta from 'react-document-meta';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import './normalize-fwd.css';
 import Main from './components/Main';
 
 const meta = {
@@ -17,6 +18,7 @@ const meta = {
 function App() {
   return (
     <DocumentMeta {...meta}>
+      <a href="#main" class="screen-reader-text">Skip to content</a>
       <Main />
     </DocumentMeta>
   );

@@ -719,3 +719,11 @@ section .nav.nav-tabs {
     background-color: #CFD8DC;
   }
 }
+
+.modal.show {
+    margin-top: 75px;
+}
+
+.project-tabs h5 {
+    margin-top: 15px;
+}

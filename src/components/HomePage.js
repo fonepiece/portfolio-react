@@ -5,7 +5,7 @@ import Tools from "./Tools";
 
 export default function Home() {
     return (
-        <main className="site-main">
+        <main className="site-main" id="main">
             <Intro />
             <Projects />
             <AboutMe />

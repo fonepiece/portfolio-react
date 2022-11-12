@@ -149,6 +149,15 @@ function getMovieTabs() {
             will be viewed on.
             </p>
         </div>
+
+        <h5>Wireframing</h5>
+        <p>Created a mobile and desktop portfolio website wireframe</p>
+        <PreviewImage
+            message='Click to open it in Adobe XD'
+            src='/media/project/details/movie-wireframe.png'
+            link='https://xd.adobe.com/view/ba61e065-bd09-4902-b029-28d93eb64042-ef32/grid'
+        />
+
         <div>
             <h5>Photoshop Mock-up</h5>
             <p> Hundreds of folders, thousands of layers... I created mockups of 48 different movie cards including hover states,
@@ -157,8 +166,11 @@ function getMovieTabs() {
                 Text content is readable 
                 Elements are in alignment 
                 Good spacing between elements
-                Application navigation that is easy to use and allows the user to navigate to all the main pages of the application.</p>
-        <img src="" alt=""/>
+                Application navigation that is easy to use and allows the user to navigate to all the main pages of the application.
+                </p>
+            <img
+                src='/media/project/details/movie-photoshop.png'
+            />
         </div>
         <div>
             <h5>High Fidelity Prototype</h5>
@@ -166,6 +178,11 @@ function getMovieTabs() {
                 some interactive magic! With a few animations and transitions I
                 created a 
                 fully functional prototype of the entire website.</p>
+            <PreviewImage
+                message='Click to open it in Adobe XD'
+                src='/media/project/details/movie-prototype.png'
+                link='https://xd.adobe.com/view/7e055db2-d240-41f4-b60f-6c8c17c9a077-2b56/grid'
+            />
         </div>
         <div>
             <h5>Accecibility</h5>
@@ -248,7 +265,7 @@ function getBeauityTabs() {
             <li>Include an online booking functionality for customers to book appointments with a specific doctor. </li>
         </ul>
         <h5>Content Plan / Information Architecture</h5>
-        <p>see the pdf</p>
+        <p><a href="/media/project/details/wordpress-DevelopmentPlan.pdf">see the pdf</a></p>
         <h5>SiteMap</h5>
         <img src="/media/project/details/wordpress-sitemap.png"/>
 
@@ -356,10 +373,27 @@ function getPortfolioTabs() {
             After answering these questions, I designed the UI with the intention of keeping it simple and easy to use. Thoughtful navigation and make calls-to-actions easy to spot and engage with was another intention. With the attention to detail put into every design, I ensure that website is not only looks beautiful, but it converts.
             I want my portfolio simple elegant and reflects my colourful personality who loves colours so I don't be afraid to use it.
         </p>
+
+        <h5>Content Plan / Information Architecture</h5>
+        <p><a href="/media/project/details/portfolio-ContentPlan.pdf">see the pdf</a></p>
+        <h5>SiteMap</h5>
+        <img src="/media/project/details/portfolio-sitemap.png"/>
+
         <h5>Wireframing</h5>
         <p>Created a mobile and desktop portfolio website wireframe</p>
+        <PreviewImage
+            message='Click to open it in Adobe XD'
+            src='/media/project/details/portfolio-wireframe.png'
+            link='https://xd.adobe.com/view/15a65a82-f2b8-4c4d-b3b6-f9626337a2e0-40f5/grid'
+        />
+
         <h5>UI Design</h5>
         <p>Styleguide</p>
+        <PreviewImage
+            message='Click to zoom in'
+            src='/media/project/details/portfolio-styleguide.png'
+        />
+
         <h5>Prototyping</h5>
         <p>I created these mockups for my portfolio in Adobe XD</p>
 

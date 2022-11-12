@@ -17,7 +17,7 @@ export default function ProjectPage() {
         tabs
     } = project.projectDetails;
     return (
-        <div className="project-title">
+        <div className="project-title" id="main">
             <h1>{title}</h1>
             <p className="project-description">{description}</p>
             <div className="project-image-container">
@@ -43,7 +43,7 @@ export default function ProjectPage() {
                 </div>
             </section>
 
-            <section>
+            <section className="project-tabs">
             {tabs && <Tabs
                 defaultActiveKey={tabs.design ? "nav-design" : "nav-dev"}
                 id="nav-tab"
