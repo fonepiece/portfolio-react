@@ -201,10 +201,28 @@ function getMovieTabs() {
                 <h5>Team</h5>
                 <p>Reyhan Taze, Yegor Nino</p>
             </div>
-            <p>For the development part we worked as a Team. Project was divided by roles,
-                    which overlapped whenever more assistance was needed for any specific tasks.</p>
-            <p>We had extra time to add some extra features to webpage to </p>
-            
+            <p>
+                For the development part we worked as a team. Based on my designs, we created the initial site layout without 
+                any react logic. After completing it, we started adding the required features one by one. 
+            </p>
+            <p>
+                First task was integrating with the movie DB APIs. I checked their documentation to understand how to get the
+                information we need. Then, I added React functionalities using react hooks to make calls to those APIs, get the
+                response and render the UI
+            </p>
+            <p>
+                Next task was implementing the favorites feature so that users can save the movies they like to their favorites list.
+                Since this project was front-end only, I stored the favorites in browser's local storage so that I can show them to
+                the user even after they close and re-open the website. 
+            </p>
+            <p>
+                Initial requirements was just showing 12 movies, but I decided to add pagination so that I can show many more movies to
+                offer a better selection and user experience.
+            </p>
+            <p>
+                This work was a full-fledged front-end web project which involves functionalities in most sites. I learned how to use local
+                storage, how to make API calls to backend systems, how to work with pagination, how react routing works in a single-page-application.
+            </p>
         </div>
     </>)
 
@@ -298,7 +316,11 @@ function getBeauityTabs() {
     </>);
 
     const tab2 = (<>
-        
+        <p>
+            During development plan, we decided which plugins, taxanomies, and custom fields we need. After that, we started with an empty theme, and made all the necessary php changes based on our development plan.
+            We split the website sections in our team, and I took the footer section. I created a navigation menu and a social menu using the wordpress admin panel and made changes in php to register them. Then, I
+            designed the footer and used the menus I defined through the admin panel in the php code.
+        </p>
     </>)
 
     const tab3 = (<>
@@ -397,7 +419,7 @@ function getPortfolioTabs() {
         <h5>Prototyping</h5>
         <p>I created these mockups for my portfolio in Adobe XD</p>
 
-        <h5>Accecibility</h5>
+        <h5>Accessibility</h5>
         <ul>
             <li>Structured and organized with headers so users to easily navigate your webpages</li>
             <li>Assigned alt tags for images for users with limited or impaired vision</li>
@@ -409,14 +431,30 @@ function getPortfolioTabs() {
     </>);
 
     const tab2 = (<>
-        <p>Sound On/Off preferences are stored in Local Storage. This enables a better user experience for repeat users who have previously disabled sound on the website. </p>
-        <ul>
-            
-        </ul>
+        <p>
+            For this project, I considered using a single HTML page or a react application. After going through all the pros and cons, I decided to implement it using React.
+            First of all, it allowed me to write modular code as I split everything into components and reused them in multiple places. With the help of react router, I defined
+            my page layout with header, footer, and content, and used it in different pages. This enabled me to have a consistent layout between pages and eliminated the chance of
+            pages getting out of sync due to updating some pages later and forgeting others.
+        </p>
+
+        <p>
+            To make it more engaging, I added sounds to some parts to provide user feedback on button clicks. The main navigation on the site was between the home page and the project
+            details page which user is navigated to when they click on a project from the home page to learn all the design/development process about it. To make it easier to go back
+            to home page after checking the project details, I added a back button in the header and changed the header to sticky-header so that users can have easy navigation. To make
+            things easier, I also added scroll-to-top button on the right-bottom, which only shows when you scroll down 300px so that it is not shown unnecessarily while you're still
+            close to the top of the page.
+        </p>
+
+        
     </>)
 
     const tab3 = (<>
         <p>
+            While working on this project, there were tons of things I wanted to do. But, I did not have enough time. So, from the start I listed down the features I want ordered on
+            priority, and started adding them one-by-one. After getting close to the due date, I had to leave some of the features lower in my todo list unimplemented. One of them was
+            adding Dark theme. This project taught me time management and how to prioritize my work to deliver everything necessary on time instead of dragging the deadlines for adding
+            couple of more unimportant features.
         </p>
     </>)
     return {design: tab1, dev: tab2, learnings: tab3};
