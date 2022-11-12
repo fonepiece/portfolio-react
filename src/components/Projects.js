@@ -16,7 +16,7 @@ export default function Projects() {
                 <Bounce direction="right" triggerOnce className="col-md-6 gy-4">
                     <ProjectItem project={projects[1]}/>
                 </Bounce>
-                <Bounce direction="left" triggerOnce className="col-md-6 gy-md-4">
+                <Bounce direction="left" triggerOnce className="col-md-6 gy-4">
                     <ProjectItem project={projects[2]}/>
                 </Bounce>
                 <Bounce direction="right" triggerOnce className="col-md-6 gy-4">

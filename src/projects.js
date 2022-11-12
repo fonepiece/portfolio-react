@@ -221,7 +221,7 @@ function getBeauityTabs() {
         </p>
 
         <h5>UX Research</h5>
-        <p>
+        <div>
             We want to understand the business owner, the industry, and—most importantly—users before we start designing. At the outset of the project, we invested the time necessary to fully comprehend the problems that needed to be fixed and how we might do so more effectively than the competition. 
 
             Competitive analysis
@@ -231,7 +231,7 @@ function getBeauityTabs() {
                 <li>https://davihillhair.com/</li>
             </ul>
 
-        </p>
+        </div>
         <h5>Target Audience</h5>
         <p>
             The website will target both men and women who wish to revitalise their skin and are between the ages of 18 and 50. Our intended audience members are looking for reasonably priced cosmetic procedures performed by qualified medical professionals.
