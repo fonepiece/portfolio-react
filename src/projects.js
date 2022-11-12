@@ -142,11 +142,11 @@ function getMovieTabs() {
             <h5>Planning</h5>
             <p>
             The mobile-first approach is used and followed by desktop versions with the following requirements in mind:<br/>
-            Create a visually engaging and innovative
-            user interface for a dynamic movie web applicatio
+            Creating a visually engaging and innovative
+            user interface for a dynamic movie web application
             by crafting graphic elements, assets, & visual treatments 
             that adapt & flow depending on the device the application 
-            will be viewed on.
+            will be the goal.
             </p>
         </div>
 
@@ -160,7 +160,7 @@ function getMovieTabs() {
 
         <div>
             <h5>Photoshop Mock-up</h5>
-            <p> Hundreds of folders, thousands of layers... I created mockups of 48 different movie cards including hover states,
+            <p> Lots of folders and layers... I created mockups of 48 different movie cards including hover states,
             as well as mockups for every single page – both mobile and desktop!</p>
             <p>Each page is well styled, with a usable user interface that follows basic design best practices:  
                 Text content is readable 
@@ -174,8 +174,8 @@ function getMovieTabs() {
         </div>
         <div>
             <h5>High Fidelity Prototype</h5>
-            <p> Then imported the Photoshop file into Adobe XD to make 
-                some interactive magic! With a few animations and transitions I
+            <p> Then I imported the Photoshop file into Adobe XD to make 
+                some interaction. With a few animations and transitions I
                 created a 
                 fully functional prototype of the entire website.</p>
             <PreviewImage
@@ -310,8 +310,7 @@ function getBeauityTabs() {
             <li>Structured and organized with headers so users to easily navigate your webpages</li>
             <li>Assigned alt tags for images for users with limited or impaired vision</li>
             <li>Used descriptive titles for links</li>
-            <li>Ensuring the colour contrasts and text sizes meet AA accessibility standards.</li>
-            <li>t for anyone with low vision or color deficiencies</li>
+            <li>Ensuring the colour contrasts and text sizes meet AA accessibility standards for anyone with low vision or color deficiencies</li>
         </ul>
     </>);
 
@@ -342,7 +341,7 @@ function getBeauityTabs() {
 
     const tab2 = (<>
         <h5>Project Description</h5>
-        <p>Created  a multi-page website about Turkey.</p>
+        <p>Created a multi-page website about Turkey.</p>
         
         <h5>Content</h5>
         <p>Used text, video and image content that falls under creative commons licenses.</p>
@@ -350,13 +349,13 @@ function getBeauityTabs() {
         <h5>HTML</h5>
         <p>The website contains all the following (as a minimum)</p>
         <ul>
-            <li>three HTML webpages about your location</li>
+            <li>Three HTML webpages about your location</li>
             <li>HTML table</li>
             <li>HTML audio or video element</li>
-            <li>blockquote element</li>
-            <li>custom font</li>
-            <li>site navigation with links to every page and reused on all pages</li>
-            <li>the meta tag for an SEO description</li>
+            <li>Blockquote element</li>
+            <li>Custom font</li>
+            <li>Site navigation with links to every page and reused on all pages</li>
+            <li>The meta tag for an SEO description</li>
             <li>HTML webpage giving credit to the creators of content with links to their websites.</li>
         </ul>
 
@@ -402,7 +401,7 @@ function getPortfolioTabs() {
         <img src="/media/project/details/portfolio-sitemap.png"/>
 
         <h5>Wireframing</h5>
-        <p>Created a mobile and desktop portfolio website wireframe</p>
+        <p>I Created a mobile and desktop portfolio website wireframe</p>
         <PreviewImage
             message='Click to open it in Adobe XD'
             src='/media/project/details/portfolio-wireframe.png'

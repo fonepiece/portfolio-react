@@ -33,17 +33,17 @@ export default function AboutMe() {
                         <p>
                             Thank you for scrolling this far.
                             From being a teacher in a school to coding on a web page, I love combining the worlds of
-                            logic and creative design to make eye-catching, accessible, and user-friendly websites and applications.
-                            I am recently graduated from BCIT Front end Web development. 
-                            I deepened my HTML/ CSS knowledge and learned so much, especially more advanced web 
-                            technologies such as React and the Javascript ecosystem. The program also taught me design / UX, as well
+                            logic and creative design to make eye-catching, accessible, and user-friendly websites and applications.<br/>
+                            I am recently graduated from BCIT Front-end Web development.
+                            I deepened my HTML/CSS knowledge and learned so much, especially more advanced web 
+                            technologies such as React and the Javascript ecosystem. The program also taught me design UI/UX, as well
                             as backend development with PHP/ WordPress, and e-commerce platforms such 
                             as Shopify and WooCommerce. 
                         </p>
                     </Fade>
                     <Fade collapse when={level >= 2}>
                         <p>
-                            I havea bachelor of honours in Education Sciences from Middle 
+                            I have a bachelor of honours in Education Sciences from Middle 
                             East Technical University. In relation to design and web development, I had courses 
                             which are Teaching Methods, Psychology, Research Methods, Assessment and Evaluation,
                             Sociology, Visual Arts, and Material Development.
@@ -66,7 +66,7 @@ export default function AboutMe() {
                             Outside Of the Work;<br/>
                             I am a mother of 2 angels, a 4-year-old boy, and a 6-year-old girl.
                             Inspiration for designs comes from living an active fun-filled life. Hanging out
-                            with friends, and creating memories with people are things she loves and is important to me. 
+                            with friends, and creating memories with people are the things I love.
                             My ever-inquisitive mind pushes me to
                             explore other fields like fashion and I love traveling too. 
                             I am also passionate about nature, photography, cake decoration and CrossFit, 

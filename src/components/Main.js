@@ -1,13 +1,13 @@
 import Footer from "./Footer";
 import Header from "./Header";
 import HomePage from "./HomePage";
-import {BrowserRouter, Routes, Route, useLocation} from 'react-router-dom';
+import {HashRouter, Routes, Route, useLocation} from 'react-router-dom';
 import ProjectPage from "./ProjectPage";
 import { useEffect, useLayoutEffect, useState } from "react";
 
 export default function Main() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <div className="site-wrapper">
             <Header />
                 <Routes>
@@ -17,7 +17,7 @@ export default function Main() {
             </div>
             <Footer />
             <ScrollToTop />
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

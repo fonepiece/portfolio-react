@@ -11,7 +11,7 @@ export default function Intro() {
                     </Slide>
                     <p className="summary">
                         <Fade direction="left" triggerOnce cascade>
-                            <div>UI/UX Designer End Web Developer</div>
+                            <div><h2>UI/UX Designer - Front End Web Developer</h2></div>
                             <div>with a passion for creating engaging, interactive,</div>
                             <div>accessible websites and mobile applications.</div>
                         </Fade>
