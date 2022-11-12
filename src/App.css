@@ -711,7 +711,6 @@ section .nav.nav-tabs {
     padding: 12px 24px;
     color: #0c4040;
     font-size: 20px;
-    font-weight: 600;
     text-decoration: none;
     transition-duration: .25s;
   }
