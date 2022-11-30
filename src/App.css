@@ -607,8 +607,17 @@ section .nav.nav-tabs {
     justify-content: center;
 }
 
+@media only screen and (max-width: 400px) {
+    .hide-sm {
+        display: none;
+    }
+}
+
 
 @media only screen and (max-width: 768px) {
+    .about-button-container {
+        justify-content: center;
+    }
     .banner { 
         flex-direction: column-reverse;
         align-items: center;
