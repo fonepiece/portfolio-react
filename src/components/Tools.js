@@ -1,7 +1,7 @@
 export default function Tools() {
     return (
         <section className="tools">
-            <h2>Skills</h2>
+            <div className="title">Skills</div>
             <div className="tools-wrap">
                 <div className="tools-list">
                     <h5>Design</h5>

@@ -18,7 +18,7 @@ const meta = {
 function App() {
   return (
     <DocumentMeta {...meta}>
-      <a href="#main" class="screen-reader-text">Skip to content</a>
+      <a href="#main" className="screen-reader-text">Skip to content</a>
       <Main />
     </DocumentMeta>
   );

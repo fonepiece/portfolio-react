@@ -1,15 +1,17 @@
-import { Link } from "react-router-dom";
-
-export default function ProjectItem({project, link}) {
+export default function ProjectItem({ project, link, showProject }) {
     return (
         <div className="project">
             <img src={project.featuredImage} alt={project.featuredImageAlt} />
             <div className="project-details">
-                <h3>{project.title}</h3>
+                <h4>{project.title}</h4>
                 <p>{project.tools.join(' | ')}</p>
                 {link
                     ? <a href={link}>See Details</a>
-                    : <Link to={`project/${project.id}`}>See Details</Link>
+                    : (
+                        <a onClick={() => showProject(project)}>
+                            See Details
+                        </a>
+                    )
                 }
             </div>
         </div>

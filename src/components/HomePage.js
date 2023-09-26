@@ -8,7 +8,6 @@ export default function Home() {
         <main className="site-main" id="main">
             <Intro />
             <Projects />
-            <AboutMe />
             <Tools />
         </main>
     )

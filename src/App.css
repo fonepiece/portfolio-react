@@ -20,7 +20,7 @@
 # Base
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Open+Sans:wght@600;700&family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@600;700&family=Uncial+Antiqua&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 :root {
@@ -37,11 +37,11 @@ img {
 }
 body {
     margin: 0;
-    font-family:'Montserrat Alternates', sans-serif, 'Uncial Antiqua', cursive;
+    font-family:'Montserrat', sans-serif, 'Uncial Antiqua', cursive;
     font-size: 1.2rem;
     line-height: 1.5;
     color: #282828;
-    background-color:#F2E8DF;
+    background-color:#D9D9D9;
 }
 
 ul{
@@ -110,6 +110,7 @@ a {
     margin: 0 auto;
     margin-top: 75px;
 }
+
 /* Header
 --------------------------------------------- */
 .site-header {
@@ -123,7 +124,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f2e8df;
+    background-color: #D9D9D9;
     margin-bottom: 1rem;
 }
 .site-header img {
@@ -250,46 +251,6 @@ a {
 #intro-section .show-more i {
     color: #F28585;
 }
-.summary{
-    font-size: 25px;
-}
-
-.banner {
-    display: flex;
-    justify-content: center;
-}
-.banner h1 {
-    padding: 0;
-    margin: 0;
-}
-
-.banner .intro {
-    margin-right: 10px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-.banner .avatar {
-    background-color:#c4320a7c;;
-    border-radius: 125px;
-}
-.banner .avatar img {
-    width: 250px;
-    height: 250px;
-}
-
-
-.about-container {
-    display: flex;
-    flex-direction: row;
-}
-.about-container > div:nth-child(1) {
-    flex: 3;
-}
-.about-container > div:nth-child(2) {
-    margin-left: 50px;
-    flex: 1;
-}
 
 /* section: projects*/
 
@@ -299,7 +260,7 @@ a {
 --------------------------------------------- */
 
 .site-footer {
-    background-color: #f7bab99f;
+    background-color: #C3D9D5;
 
 }
 .tools{
@@ -322,7 +283,7 @@ a {
     font-size: 16px ;
 }
 .tools-wrap h5 {
-    color:#6D8FB5;
+    color:#495664;
 }
 
 
@@ -351,18 +312,22 @@ a {
 .project .project-details p {
     font-weight: bold;
 }
-.project .project-details a {
+.project .project-details a,
+.project .project-details button {
     border-radius: var(--border-radius);
     background-color: #F28585;
     padding: 8px 14px;
     color: white;
+    border: none;
 }
 
-.project .project-details a:hover {
+.project .project-details a:hover,
+.project .project-details button:hover {
     background-color: #ee7676;
 }
 
-.project .project-details a:active {
+.project .project-details a:active,
+.project .project-details button:active {
     background-color: #ec6f6f;
 }
 
@@ -375,7 +340,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.44);
     border-radius: var(--border-radius);
     top: 0;
 }
@@ -417,7 +382,6 @@ a {
 
 #my-projects h2, #about h2, .tools h2 {
     padding-top: 70px;
-    text-align: center;
     color: #BC4A24;
 }
 
@@ -613,47 +577,6 @@ section .nav.nav-tabs {
     }
 }
 
-
-@media only screen and (max-width: 768px) {
-    .about-button-container {
-        justify-content: center;
-    }
-    .banner { 
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .banner .avatar {
-        border-radius: 100px;
-        width: 200px;
-        height: 200px;
-    }
-    .banner .avatar img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .summary {
-        font-size: 20px;
-    }
-    #intro-section {
-        justify-content: flex-start;
-        padding: 20px 40px;
-    }
-    .intro h1 {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        
-    }
-
-    .about-container {
-        flex-direction: column;
-    }
-    .about-container > div:nth-child(2) {
-        margin-left: 0;
-        flex: 1 1;
-    }
-}
 @media (max-width: 767px) {
 /* HAMBUERGER MENU */
     .top-ul {
@@ -713,7 +636,7 @@ section .nav.nav-tabs {
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: #f2d9df;
+    background-color: #C3D9D5;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
     z-index: 9999;
@@ -737,4 +660,20 @@ section .nav.nav-tabs {
 
 .project-tabs h5 {
     margin-top: 15px;
+}
+
+
+#project-modal {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#project-modal img {
+    width: 100%;
+}
+
+#resolutelab img {
+    margin-bottom: 40px;
 }

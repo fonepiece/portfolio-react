@@ -4,14 +4,16 @@ import HomePage from "./HomePage";
 import {HashRouter, Routes, Route, useLocation} from 'react-router-dom';
 import ProjectPage from "./ProjectPage";
 import { useEffect, useLayoutEffect, useState } from "react";
+import AboutMe from "./AboutMe";
 
 export default function Main() {
     return (
         <HashRouter>
-            <div className="site-wrapper">
+            <div className="site-wrapper px-2 sm:px-4">
             <Header />
                 <Routes>
                     <Route path="/" exact element={<HomePage />} />
+                    <Route path="/about" exact element={<AboutMe />} />
                     <Route path="/project/:projectId" element={<ProjectPage />} />
                 </Routes>
             </div>

@@ -1,6 +1,7 @@
 import { Tab, Tabs } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import { projects } from "../projects";
+// TODO remove
+const projects = []
 
 export default function ProjectPage() {
     const { projectId } = useParams();

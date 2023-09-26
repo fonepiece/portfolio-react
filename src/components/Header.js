@@ -26,7 +26,7 @@ export default function Header() {
                 </label>
                 <ul className="menu__box circleBehind">
                     <li><HashLink onClick={() => setExpanded(false)} className="menu__item" to="/#my-projects">Projects</HashLink></li>
-                    <li><HashLink onClick={() => setExpanded(false)} className="menu__item" to="/#about">About</HashLink></li>
+                    <li><Link onClick={() => setExpanded(false)} className="menu__item" to="/about">About</Link></li>
                     <li><HashLink onClick={() => setExpanded(false)} className="menu__item" to="/#footer">Contact</HashLink></li>
                 </ul>
             </nav>

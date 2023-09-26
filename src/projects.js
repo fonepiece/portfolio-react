@@ -1,137 +1,86 @@
 import PreviewImage from "./components/PreviewImage";
+import mixaContent from './content/mixa.md'
+import sistersContent from './content/sisters.md'
+import movieContent from './content/movie.md'
+import flairContent from './content/flair.md'
+import resolutelabContent from './content/resolutelab.md'
 
-export const projects = [
-    {
-        id: 'beauty',
-        title: 'Beauty Aesthetics Medical',
-        tools: ['WordPress', 'PHP', 'SASS', 'UI/UX'],
-        featuredImage: '/media/project/wordpres.png',
-        featuredImageAlt: 'wordpress-medical clinic',
-        projectDetails: {
-            title: 'Beauty Aesthetics Medical',
-            description: 'Wordpress Custom Website Design and development for a local medical clinic.',
-            featuredImage: '/media/project/wordpress-single.png',
-            featuredImageAlt: 'Beauty Aesthetics Medical',
-            links: [
-                {text: 'Live', link: 'https://beautyaesthetics.bcitwebdeveloper.ca/'},
-                {text: 'Github', link: 'https://github.com/htpwebdesign/beauty-aesthetics'},
-            ],
-            overview: {
-                tools: ['WordPress', 'SASS', 'JavaScript', 'PHP', 'GitHub', 'Photoshop Illustrator', 'Adobe XD', 'Asana'],
-                description: "The new website for the Beauty Aesthetics clinic should have a warm and welcoming appearance. It should be unique among the websites of other clinics while still acting professionally. First-time visitors should be impressed by the website so they will remember both it and the company it represents. The website will list the company's services, location, and make it simple for customers to make booking with the aim of reflecting the particular personality of the elite medical company.",
-                responsiveness: 'Desktop and Mobile',
-                roles: ['Content and Development Planner', 'UI Designer', 'Front-End Developer'],
-                duration: '3 weeks',
-            },
-            tabs: getBeauityTabs()
-        }
-    },
-    {
-        id: 'my-portfolio',
-        title: 'My Portfolio',
-        tools: ['Adobe XD', 'Adobe Photoshop', 'HTML5', 'CSS3/Sass', 'React'],
-        featuredImage: '/media/project/portfolio-home.png',
-        featuredImageAlt: 'React-my portfolio',
-        projectDetails: {
-            title: 'My Portfolio',
-            description: 'Built with React and lots of love! This website is a showcase of my recent projects as a Front End web developer and UI/UX Designer.',
-            featuredImage: '/media/project/portfoloi-single.png',
-            featuredImageAlt: 'My Portfolio',
-            links: [
-                {text: 'Live', link: 'https://reyhantaze.com'},
-                {text: 'Github', link: 'https://github.com/fonepiece/personal-website'},
-            ],
-            overview: {
-                tools: ['HTML', 'CSS', 'React', 'jQuery', 'Bootstrap', 'Photoshop', 'Illustrator', 'Adobe XD'],
-                description: "This project was intended to be a display of all the things I've worked on in recent years. I made an effort to keep the user interface (UI) as straightforward as I could, combining it with the web technologies I think work best for a non-reactive website which is a place that shows who I am - my work attitude, style and personality and my design / development skills.",
-                responsiveness: 'Desktop and Mobile',
-                roles: ['Content and Development Planner', 'UI Designer', 'Front-End Developer'],
-                duration: '2 weeks',
-            },
-            tabs: getPortfolioTabs()
-        }
-    },
-    {
-        id: 'movie',
-        title: 'Movie Database',
-        tools: ['Adobe XD', 'Adobe Photoshop', 'HTML5', 'CSS3/Sass', 'React'],
-        featuredImage: '/media/project/movie-home.png',
-        featuredImageAlt: 'Movie Database',
-        projectDetails: {
-            title: 'Movie Database App',
-            description: 'A movie database built in React.js using themoviedb.org API.',
-            featuredImage: '/media/project/movie-single.png',
-            featuredImageAlt: 'Movie Database',
-            links: [
-                {text: 'Live', link: 'https://reyhantaze.com/movie'},
-                {text: 'Github', link: 'https://github.com/fonepiece/movie-db'},
-            ],
-            overview: {
-                tools: ['HTML', 'CSS', 'Photoshop', 'Adobe XD', 'React', 'jQuery', 'Bootstrap'],
-                description: 'An end-to-end project from concept ideation to interaction and prototyping. First on Photoshop high fidelity mockup created on Photoshop and then exported to Adobe XD adding animations with React that uses real time data from The Movie Database TMDb APIAs, as team of 2 movie data base website is built.',
-                responsiveness: 'Desktop and Mobile',
-                roles: ['UI/UX Designer', 'Front End Web Developer'],
-                duration: '2 weeks',
-            },
-            tabs: getMovieTabs()
-        }
-    },
-    {
-        id: 'country',
-        title: 'Visit Turkey',
-        tools: ['HTML5', 'CSS', 'JavaScript'],
-        featuredImage: '/media/project/turky-home.png',
-        featuredImageAlt: 'html css javascrip project',
-        projectDetails: {
-            title: 'County Web Page',
-            description: 'This is an example of creating Animated HTML5 Website for desktop and a separate lightweight mobile website.',
-            featuredImage: '/media/project/turkey-single.png',
-            featuredImageAlt: 'County Web Page',
-            links: [
-                {text: 'Live', link: 'https://reyhantaze.com/country'},
-            ],
-            overview: {
-                tools: ['HTML', 'CSS', 'Javascript'],
-                // description: 'On the first screen, the player enters the name. When the player clicks the start button, the second screen will be displayed. The second screen shows the instructions. By clicking the buttons(easy-hard), the player selects the level. On the 3rd screen, we have a total of 8 cards for the easy level and 16 cards for the hard level on the game board. All cards will be faced down initially. There are two identical images for each pair. There will be also a display area for name, score, and timer.',
-                responsiveness: 'Desktop and Mobile',
-                roles: ['UI/UX Designer', 'Front End Web Developer'],
-                duration: '1 week',
-            },
-            tabs: getCountryTabs()
-        }
-
-    },
-    {
-        id: 'matching-game',
-        title: 'Matching Game',
-        tools: ['HTML5', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap'],
-        featuredImage: '/media/project/cardgame-home.png',
-        featuredImageAlt: 'Matching card Game',
-        projectDetails: {
-            title: 'Card Game',
-            description: 'This is an example of using jQuery and vanilla Javascript to manipulate the DOM and CSS properties.',
-            featuredImage: '/media/project/cardgame-single.png',
-            featuredImageAlt: 'Card Game',
-            links: [
-                {text: 'Live', link: 'https://reyhantaze.com/card-game'},
-            ],
-            overview: {
-                tools: ['HTML', 'CSS', 'Javascript', 'jQuery', 'Bootstrap'],
-                description: 'On the first screen, the player enters the name. When the player clicks the start button, the second screen will be displayed. The second screen shows the instructions. By clicking the buttons(easy-hard), the player selects the level. On the 3rd screen, we have a total of 8 cards for the easy level and 16 cards for the hard level on the game board. All cards will be faced down initially. There are two identical images for each pair. There will be also a display area for name, score, and timer.',
-                responsiveness: 'Desktop and Mobile',
-                roles: ['UI/UX Designer', 'Front End Web Developer'],
-                duration: '1 week',
-            },
-        }
-    },
-    {
-        id: 'cupcake',
-        title: 'Toronto Cupcake UX Case Study',
-        tools: ['UX Research', 'UI Design'],
-        featuredImage: '/media/project/ux-home.png',
-        featuredImageAlt: 'Ux Research Brief docuement'
-    },
-]
+export async function getProjects() {
+    return [
+        {
+            id: 'mixa',
+            title: 'SaaS App Branding and UX/UI Design',
+            content: await fetch(mixaContent).then(t => t.text()),
+            tools: ['Figma', 'UI/UX Design', 'User Research'],
+            featuredImage: '/projects/mixa/cover.png',
+            featuredImageAlt: 'Mixa',
+        },
+        {
+            id: 'sistersinpsychedelics',
+            title: 'Website Re-design',
+            content: await fetch(sistersContent).then(t => t.text()),
+            tools: ['WordPress', 'HTML/CSS', 'UI/UX Design'],
+            featuredImage: '/projects/sisters/cover.png',
+            featuredImageAlt: 'Website Re-design',
+        },
+        {
+            id: 'movie',
+            title: 'Responsive Movie Database UI Design',
+            content: await fetch(movieContent).then(t => t.text()),
+            tools: ['Adobe XD', 'Adobe Photoshop', 'CSS', 'React'],
+            featuredImage: '/projects/movie/cover2.png',
+            featuredImageAlt: 'Responsive Movie Database UI Design',
+        },
+        {
+            id: 'flair',
+            title: 'Flair Airlines Booking Re-Design',
+            content: await fetch(flairContent).then(t => t.text()),
+            tools: ['User Research', 'UI Design'],
+            featuredImage: '/projects/flair/cover.png',
+            featuredImageAlt: 'Flair Airlines Booking Re-Design',
+    
+        },
+        {
+            id: 'resolutelab',
+            title: 'Cryptocurrency Landing Page Design',
+            content: await fetch(resolutelabContent).then(t => t.text()),
+            tools: ['Figma', 'Interaction Design', 'Content Design'],
+            featuredImage: '/projects/resolutelab/cover.png',
+            featuredImageAlt: 'Cryptocurrency Landing Page Design',
+    
+        },
+        // {
+        //     id: 'matching-game',
+        //     title: 'Matching Game',
+        //     tools: ['HTML5', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap'],
+        //     featuredImage: '/media/project/cardgame-home.png',
+        //     featuredImageAlt: 'Matching card Game',
+        //     projectDetails: {
+        //         title: 'Card Game',
+        //         description: 'This is an example of using jQuery and vanilla Javascript to manipulate the DOM and CSS properties.',
+        //         featuredImage: '/media/project/cardgame-single.png',
+        //         featuredImageAlt: 'Card Game',
+        //         links: [
+        //             {text: 'Live', link: 'https://reyhantaze.com/card-game'},
+        //         ],
+        //         overview: {
+        //             tools: ['HTML', 'CSS', 'Javascript', 'jQuery', 'Bootstrap'],
+        //             description: 'On the first screen, the player enters the name. When the player clicks the start button, the second screen will be displayed. The second screen shows the instructions. By clicking the buttons(easy-hard), the player selects the level. On the 3rd screen, we have a total of 8 cards for the easy level and 16 cards for the hard level on the game board. All cards will be faced down initially. There are two identical images for each pair. There will be also a display area for name, score, and timer.',
+        //             responsiveness: 'Desktop and Mobile',
+        //             roles: ['UI/UX Designer', 'Front End Web Developer'],
+        //             duration: '1 week',
+        //         },
+        //     }
+        // },
+        // {
+        //     id: 'cupcake',
+        //     title: 'Toronto Cupcake UX Case Study',
+        //     tools: ['UX Research', 'UI Design'],
+        //     featuredImage: '/media/project/ux-home.png',
+        //     featuredImageAlt: 'Ux Research Brief docuement'
+        // },
+    ]
+}
 
 /*
  *  MOVIE
