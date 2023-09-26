@@ -677,3 +677,6 @@ section .nav.nav-tabs {
 #resolutelab img {
     margin-bottom: 40px;
 }
+.modal-fullscreen .modal-header {
+    border: 0;
+}

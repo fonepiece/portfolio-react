@@ -50,6 +50,7 @@ export default function Projects() {
             </div>
 
             <Modal show={show} onHide={() => setShow(false)} fullscreen animation={false}>
+                <Modal.Header closeButton></Modal.Header>
                 <Modal.Body>
                     <div id="project-modal">
                         <h1>
