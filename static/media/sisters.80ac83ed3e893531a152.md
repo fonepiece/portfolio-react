@@ -1,6 +1,6 @@
 ![](/projects/sisters/cover.png)
 
-<div style="display:flex;flex-direction:row;gap:5px">
+<div class="flex flex-col sm:flex-row gap-16 sm:gap-5 list-with-disc text-sm">
 <div style="flex:2">
 
 ### Role
