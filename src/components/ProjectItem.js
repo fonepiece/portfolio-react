@@ -8,7 +8,7 @@ export default function ProjectItem({ project, link, showProject }) {
                 {link
                     ? <a href={link}>See Details</a>
                     : (
-                        <a onClick={() => showProject(project)}>
+                        <a className="cursor-pointer" onClick={() => showProject(project)}>
                             See Details
                         </a>
                     )

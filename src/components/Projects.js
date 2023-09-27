@@ -1,27 +1,11 @@
 
 import { Bounce } from "react-awesome-reveal"
-import { getProjects } from "../projects"
 import ProjectItem from "./ProjectItem"
 import Modal from 'react-bootstrap/Modal';
-import { useState } from "react";
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from "rehype-raw";
 
-export default function Projects() {
-    const [projects, setProjects] = useState([]);
-    const [show, setShow] = useState(false);
-    const [currentProject, setCurrentProject] = useState(null);
-
-    useState(async () => {
-        const res = await getProjects()
-        setProjects(res)
-    }, [])
-
-    const showProject = async (project) => {
-        setCurrentProject(project)
-        setShow(true)
-    }
-
+export default function Projects({projects, setShow, show, showProject, currentProject }) {
     if (!projects.length) return null
 
     return (

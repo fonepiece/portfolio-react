@@ -2,19 +2,40 @@ import Footer from "./Footer";
 import Header from "./Header";
 import HomePage from "./HomePage";
 import {HashRouter, Routes, Route, useLocation} from 'react-router-dom';
-import ProjectPage from "./ProjectPage";
 import { useEffect, useLayoutEffect, useState } from "react";
 import AboutMe from "./AboutMe";
+import { getProjects } from "../projects"
 
 export default function Main() {
+    const [projects, setProjects] = useState([]);
+    const [show, setShow] = useState(false);
+    const [currentProject, setCurrentProject] = useState(null);
+
+    useState(async () => {
+        const res = await getProjects()
+        setProjects(res)
+    }, [])
+
+    const showProject = async (project) => {
+        setCurrentProject(project)
+        setShow(true)
+    }
+
+    const properties = {
+        projects,
+        showProject,
+        setShow,
+        show,
+        currentProject,
+    }
+
     return (
         <HashRouter>
             <div className="site-wrapper px-2 sm:px-4">
-            <Header />
+            <Header show={show} setShow={setShow}/>
                 <Routes>
-                    <Route path="/" exact element={<HomePage />} />
+                    <Route path="/" exact element={<HomePage {...properties} />} />
                     <Route path="/about" exact element={<AboutMe />} />
-                    <Route path="/project/:projectId" element={<ProjectPage />} />
                 </Routes>
             </div>
             <Footer />

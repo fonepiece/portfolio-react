@@ -5,19 +5,19 @@ export default function Intro() {
     return (
         <section id="intro-section">
 
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col items-center md:flex-row gap-4">
                 <Fade direction="left" triggerOnce>
-                    <div className="w-96">
+                    <div className="w-64 sm:w-96">
                         <img src="/profile.png" />
                     </div>
                 </Fade>
-                <div className="px-8">
+                <div className="">
                     <Slide direction="down" triggerOnce>
                         <div className="text-4xl">Hi, I am <span className="text-[#E36363] font-bold">Reyhan Taze</span></div>
                     </Slide>
                     <p className="mt-4">
                         <Fade direction="right" triggerOnce cascade>
-                            <div className="text-6xl text-[#666666] font-extrabold">
+                            <div className="text-4xl sm:text-6xl text-[#666666] font-extrabold">
                                 <div>UI/UX</div>
                                 <div className="pl-16"> Designer</div>
 

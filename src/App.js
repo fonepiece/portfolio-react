@@ -3,10 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './normalize-fwd.css';
 import Main from './components/Main';
+import ReactGA from 'react-ga';
 
 const meta = {
-  title: 'Reyhan Taze',
-  description: 'Front End Web developer and designer, Reyhan Taze portfolio website',
+  title: 'Reyhan Taze | Personal Website',
+  description: 'Elevate User Experiences – Dive into my UX design portfolio to explore captivating projects, innovative solutions, and user-centric experiences. Discover how I make digital interactions intuitive and delightful.',
   meta: {
     charset: 'utf-8',
     name: {
@@ -14,6 +15,9 @@ const meta = {
     }
   }
 };
+
+ReactGA.initialize('G-7W30X5N0Q4');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (
