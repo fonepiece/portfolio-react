@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import './normalize-fwd.css';
 import Main from './components/Main';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 const meta = {
   title: 'Reyhan Taze | Personal Website',
@@ -17,7 +17,6 @@ const meta = {
 };
 
 ReactGA.initialize('G-7W30X5N0Q4');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (
