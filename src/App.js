@@ -16,7 +16,7 @@ const meta = {
   }
 };
 
-ReactGA.initialize('G-7W30X5N0Q4');
+ReactGA.initialize('G-HQWKRBWVGW');
 
 function App() {
   return (
