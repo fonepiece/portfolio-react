@@ -684,8 +684,8 @@ section .nav.nav-tabs {
     width: 100%;
 }
 
-#resolutelab img {
-    margin-bottom: 40px;
+.image-container img {
+    margin-bottom: 60px;
 }
 .modal-fullscreen .modal-header {
     border: 0;

@@ -3,10 +3,19 @@ import mixaContent from './content/mixa.md'
 import sistersContent from './content/sisters.md'
 import movieContent from './content/movie.md'
 import flairContent from './content/flair.md'
+import saigeContent from './content/saige.md'
 import resolutelabContent from './content/resolutelab.md'
 
 export async function getProjects() {
     return [
+        {
+            id: 'saige',
+            title: 'Saige',
+            content: await fetch(saigeContent).then(t => t.text()),
+            tools: ['Figma', 'UI/UX Design', 'User Research'],
+            featuredImage: '/projects/saige/cover.jpg',
+            featuredImageAlt: 'Saige',
+        },
         {
             id: 'mixa',
             title: 'SaaS App Branding and UX/UI Design',

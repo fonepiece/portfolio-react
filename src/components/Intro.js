@@ -27,7 +27,7 @@ export default function Intro() {
                                     I am currently working in the fast-paced environment of a startup SaaS company as a <b>UX Designer.</b>
                                 </div>
                                 <div className="mt-2">
-                                    With my <b>8-years of experience as teacher</b>, I create intuitive interfaces that seamlessly guide users through digital experiences, making complex processes easily understandable and tailored to their needs.
+                                    I create intuitive interfaces that seamlessly guide users through digital experiences, making complex processes easily understandable and tailored to their needs. I have experience in Education
                                 </div>
                             </div>
                         </Fade>

@@ -28,9 +28,9 @@ export default function Projects({projects, setShow, show, showProject, currentP
                 <Bounce direction="left" triggerOnce className="col-md-6 gy-4">
                     <ProjectItem project={projects[4]} showProject={showProject} />
                 </Bounce>
-                {/* <Bounce direction="right" triggerOnce className="col-md-6 gy-4">
-                    <ProjectItem project={projects[5]} link="/media/project/details/cupcake-ux-brief.pdf" />
-                </Bounce> */}
+                <Bounce direction="right" triggerOnce className="col-md-6 gy-4">
+                    <ProjectItem project={projects[5]} showProject={showProject} />
+                </Bounce>
             </div>
 
             <Modal show={show} onHide={() => setShow(false)} fullscreen animation={false}>
