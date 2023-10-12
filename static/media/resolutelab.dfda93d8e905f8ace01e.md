@@ -2,7 +2,7 @@
 ![](/projects/resolutelab/cover.png)
 <hr />
 
-<div id="resolutelab">
+<div class="image-container">
 
 ![](/projects/resolutelab/1.jpg)
 ![](/projects/resolutelab/2.jpg)
